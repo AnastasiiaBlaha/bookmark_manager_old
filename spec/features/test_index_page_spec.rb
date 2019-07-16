@@ -1,4 +1,4 @@
-feature 'View the bookmarks' do
+feature 'View the home page' do
     scenario 'index page' do
         visit ('/')
         expect(page).to have_content "Bookmarks"
