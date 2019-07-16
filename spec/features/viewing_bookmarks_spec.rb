@@ -1,6 +1,8 @@
 feature 'Viewing the bookmarks' do
     scenario 'can see all the bookmarks' do
         visit ('/bookmarks')
-        expect(page).to have_content 'Bookmark1, Bookmark2'
+        expect(page).to have_content "http://www.makersacademy.com"
+        expect(page).to have_content "http://www.destroyallsoftware.com"
+        expect(page).to have_content "http://www.google.com"
     end
 end

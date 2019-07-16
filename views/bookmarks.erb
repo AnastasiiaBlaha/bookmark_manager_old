@@ -3,3 +3,9 @@
     <h1> Bookmark1, Bookmark2 </h1>
     </body>
 </html>
+
+<ul>
+  <% @bookmarks_erb.each do |bookmark| %>
+    <li><%= bookmark %></li>
+  <% end %>
+</ul>
